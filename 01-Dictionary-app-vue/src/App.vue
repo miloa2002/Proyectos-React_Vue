@@ -16,8 +16,8 @@ const fetchData = async () => {
   try {
     const resposne = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word.value}`)
     const result = await resposne.json()
+    error.value = "";
     data.value = result
-    
   } catch (error) {
     console.log(error);
   }
