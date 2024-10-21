@@ -25,10 +25,7 @@ const handleSubmit = () => {
     createTodo()
   }
 
-  Object.assign(todo, {
-    id: null,
-    title: ""
-  })
+  Object.assign(todo, { id: null, title: ""})
 }
 
 </script>
